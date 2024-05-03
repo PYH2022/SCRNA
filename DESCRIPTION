@@ -1,0 +1,33 @@
+Package: SCRNA
+Title: Single Cell Transcriptomics Analysis Workflow
+Version: 0.9.1
+Authors: Yihao Peng <yihaopeng@link.cuhk.edu.cn>
+Maintainer: Yihao Peng <yihaopeng@link.cuhk.edu.cn>
+Description: 
+    Single cell RNA sequencing provides gene expression profile of individual cells. Single Cell Transcriptomics Analysis is aimed to characterize cell states and identify cellular heterogeneity.
+    The input data collected from single cell transcriptomic measurements is primarily a matrix, with each row representing a cell and each column representing a gene. 
+    The data analysis workflow is roughly divided into five steps, including pre-processing (quality control), dimension reduction (PCA, UMAP), CLustering (K-means, Louvain), Annotation, Downstream Verification.
+    Above all, SCRNA give a simple implementation of functions and methods in the single cell transcriptomics data analysis workflow.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+    stats,
+    utils,
+    tools,
+    Matrix,
+    ggplot2,
+    cluster,
+    leiden,
+    plotly,
+    igraph,
+    purrr,
+    MASS
+Depends: 
+    R (>= 4.0.0)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
